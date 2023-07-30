@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -8,120 +9,117 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="{% static 'main/css/main.css' %}"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="scripts/burger.js"></script>
-    <script src="scripts/slider.js"></script>
-    <meta name="viewport" content="width=device-width">
-    
-</head>
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/scroll_top.js" defer></script>
+    <meta name="viewport" content="width=device-width"> </head>
+
 <body>
-  <div class="wrapper">
-      <header>
-          <div class="container">
-              <div class="header__body">
-                 <div class="header__title">
-                  <a href="#" class="header__logo">
-                      <h3>Психолог<br> Татьяна Соколова</h3>
-                  </a>
-              </div>
-            
-              <nav class="header__menu"><ul class="header__menu_list">
-                  <li class="header__menu_item"><a href="#" class="header__link">главная</a></li>
-                  <li class="header__menu_item"><a href="#" class="header__link">обо&nbsp;мне</a></li>
-                  <li class="header__menu_item"><a href="#" class="header__link">услуги&nbsp;и&nbsp;цены</a></li>
-                  <li class="header__menu_item"><a href="#" class="header__link">блог</a></li>
-                  <li class="header__menu_item"><a href="#" class="header__link">faq</a></li>
-                  <li class="header__menu_item"><a href="#" class="header__link">отзывы</a></li>
-                  <li class="header__menu_item"><a href="#" class="header__link">договор</a></li>
-                  <li class="header__menu_item"><a href="#" class="header__link">контакты</a></li>
-                  <li class="header__menu_item"><a href="#" class="header__link">записаться</a></li>
-              </ul></nav>
-              <button class="register">записаться</button>
-              <div class="header__burger">
-                  <span></span>
-              </div>
-              </div> <!-- end header__body -->
-              </div> <!-- end container -->
-      </header>
-      
-      
-      <section class="content mainscreen">
-              <h1>Психолог Татьяна&nbsp;Соколова</h1>
-              <h2>Любовь, забота, безопасность</h2>
-              </section>
-      
-             
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="header__body">
+                    <div class="header__title">
+                        <a href="#" class="header__logo">
+                            <h3>Психолог<br> Татьяна Соколова</h3> </a>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__menu_list">
+                            <li class="header__menu_item"><a href="#" class="header__link">главная</a></li>
+                            <li class="header__menu_item"><a href="#" class="header__link">обо&nbsp;мне</a></li>
+                            <li class="header__menu_item"><a href="#" class="header__link">услуги&nbsp;и&nbsp;цены</a></li>
+                            <li class="header__menu_item"><a href="#" class="header__link">блог</a></li>
+                            <li class="header__menu_item"><a href="#" class="header__link">faq</a></li>
+                            <li class="header__menu_item"><a href="#" class="header__link">отзывы</a></li>
+                            <li class="header__menu_item"><a href="#" class="header__link">договор</a></li>
+                            <li class="header__menu_item"><a href="#" class="header__link">контакты</a></li>
+                            <li class="header__menu_item"><a href="#" class="header__link">записаться</a></li>
+                        </ul>
+                    </nav>
+                    <button class="register">записаться</button>
+                    <div class="header__burger"> <span></span> </div>
+                </div>
+                <!-- end header__body -->
+            </div>
+            <!-- end container -->
+        </header>
+        
+        
+        <div class="ontop">
+            <a href="#top"><i class="fa fa-thin fa-caret-up"></i></a>
+        </div>
+        
+        
+        <section class="content mainscreen" id="top">
+            <h1>Психолог Татьяна&nbsp;Соколова</h1>
+            <h2>Любовь, забота, безопасность</h2> </section>
         <section class="content white">
-           <div class="container">
-            <div class="content_description">
-                <h2>обо мне</h2>
-                <h3>интересные факты</h3>
+            <div class="container">
+                <div class="content_description">
+                    <h2>обо мне</h2>
+                    <h3>интересные факты</h3> </div>
+                <div class="about">
+                    <div>
+                        <h3>обо мне</h3>
+                        <p class="colored">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, facilis dicta accusamus ullam minima quae autem ea quaerat cumque illum quis, quod dolorum optio perspiciatis! Ratione voluptatibus at culpa dignissimos perspiciatis eveniet omnis qui distinctio ipsam, nesciunt neque adipisci.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nobis doloribus minus ducimus ad enim, harum impedit, excepturi ex illo nesciunt ut similique accusamus incidunt repellat consectetur amet dolor maxime facilis culpa. Inventore voluptatum, voluptatibus ad.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem illum quia aspernatur neque ut soluta sapiente aperiam dicta, asperiores dignissimos consequuntur quidem exercitationem rem, nihil accusantium tempore magni hic explicabo, officiis autem non at excepturi quam. Tenetur ab, eos voluptatibus velit a dolorum pariatur reprehenderit. Eveniet, deserunt assumenda a, amet voluptatem illo in ipsa porro est! Architecto dicta modi, quidem id unde suscipit fugiat officiis, asperiores delectus consequuntur eos laudantium laborum debitis. Corporis reprehenderit architecto facilis excepturi vitae minus.</p>
+                    </div>
+                    <div>
+                        <h3>фото</h3> <img src="img/tani.jpg" alt="autor"> </div>
+                    <div>
+                        <h3>факты</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat id, vitae non!</li>
+                            <br>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum porro atque neque facere necessitatibus consectetur numquam dolorum, delectus optio modi sequi veniam sed, quidem, natus, distinctio quo.</li>
+                            <br>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repellendus molestias accusantium vero at?</li>
+                            <br>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi enim, necessitatibus ipsum?</li>
+                            <br>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam velit accusantium tenetur, adipisci est. Itaque repudiandae blanditiis repellat nisi quo.</li>
+                            <br>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est.</li>
+                            <br>
+                            <li>Почта: <a href="mailto:tanina_pochta@psy.ru">tanina_pochta@psy.ru</a></li>
+                            <br>
+                            <li>Социальные сети: <a href="#"><i class="fa fa-solid fa-paper-plane"></i></a> <a href="#"><i class="fa fa-brands fa-instagram"></i></a> <a href="#"><i class="fa fa-brands fa-vk"></i></a> </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="about">
-                <div>
-                    <h3>обо мне</h3>
-                    <p class="colored">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, facilis dicta accusamus ullam minima quae autem ea quaerat cumque illum quis, quod dolorum optio perspiciatis! Ratione voluptatibus at culpa dignissimos perspiciatis eveniet omnis qui distinctio ipsam, nesciunt neque adipisci.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nobis doloribus minus ducimus ad enim, harum impedit, excepturi ex illo nesciunt ut similique accusamus incidunt repellat consectetur amet dolor maxime facilis culpa. Inventore voluptatum, voluptatibus ad.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem illum quia aspernatur neque ut soluta sapiente aperiam dicta, asperiores dignissimos consequuntur quidem exercitationem rem, nihil accusantium tempore magni hic explicabo, officiis autem non at excepturi quam. Tenetur ab, eos voluptatibus velit a dolorum pariatur reprehenderit. Eveniet, deserunt assumenda a, amet voluptatem illo in ipsa porro est! Architecto dicta modi, quidem id unde suscipit fugiat officiis, asperiores delectus consequuntur eos laudantium laborum debitis. Corporis reprehenderit architecto facilis excepturi vitae minus.</p>
-                </div>
-                <div>
-                <h3>фото</h3>
-                <img src="img/tani.jpg" alt="autor">
-                </div>
-                <div>
-                    <h3>факты</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat id, vitae non!</li><br>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum porro atque neque facere necessitatibus consectetur numquam dolorum, delectus optio modi sequi veniam sed, quidem, natus, distinctio quo.</li><br>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repellendus molestias accusantium vero at?</li><br>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi enim, necessitatibus ipsum?</li><br>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam velit accusantium tenetur, adipisci est. Itaque repudiandae blanditiis repellat nisi quo.</li><br>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est.</li><br>
-                        <li>Почта: <a href="mailto:tanina_pochta@psy.ru">tanina_pochta@psy.ru</a></li><br>
-                        <li>Социальные сети: 
-                        <a href="#"><i class="fa fa-solid fa-paper-plane"></i></a> 
-                        <a href="#"><i class="fa fa-brands fa-instagram"></i></a> 
-                        <a href="#"><i class="fa fa-brands fa-vk"></i></a>
-                        </li> 
-                    </ul>
-                </div>
-            </div>
-            </div> <!-- end container -->
+            <!-- end container -->
         </section>
-             
-             
         <section class="content blue">
             <div class="container">
                 <div class="content_description">
                     <h2>как я работаю</h2>
-                    <h3>подход к работе</h3>
-                    </div>
-                    <div class="about_work">
-                        <ul>
-                            <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, sunt dolorem autem earum quae deserunt repellat. Iusto, ipsam. Cupiditate, deleniti.</li>
-                            <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam at reprehenderit quam cumque a quidem vero soluta consectetur laudantium, odio dicta voluptas dolores? Saepe ab, voluptatibus culpa pariatur iure porro praesentium, error unde, earum, perferendis ipsum facilis maxime! Consequuntur, numquam. Quis reprehenderit, facilis, quasi praesentium eius sit minima itaque non asperiores blanditiis? Exercitationem iusto, blanditiis quae, facilis aliquid mollitia laudantium error fugiat omnis dignissimos magni quisquam eos maxime provident rem!</li>
-                            <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati soluta quam voluptatibus consectetur enim fuga! Repellendus modi ea explicabo aperiam, maiores fuga placeat atque dolorem quaerat.</li>
-                            <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</li>
-                            <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, commodi, nostrum.</li>
-                            <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus, veniam ullam ex rem, saepe quaerat eius, reprehenderit culpa recusandae quas dolor corporis!</li>
-                            <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, necessitatibus consequuntur iusto praesentium quis?</li></ul>
+                    <h3>подход к работе</h3> </div>
+                <div class="about_work">
+                    <ul>
+                        <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, sunt dolorem autem earum quae deserunt repellat. Iusto, ipsam. Cupiditate, deleniti.</li>
+                        <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam at reprehenderit quam cumque a quidem vero soluta consectetur laudantium, odio dicta voluptas dolores? Saepe ab, voluptatibus culpa pariatur iure porro praesentium, error unde, earum, perferendis ipsum facilis maxime! Consequuntur, numquam. Quis reprehenderit, facilis, quasi praesentium eius sit minima itaque non asperiores blanditiis? Exercitationem iusto, blanditiis quae, facilis aliquid mollitia laudantium error fugiat omnis dignissimos magni quisquam eos maxime provident rem!</li>
+                        <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati soluta quam voluptatibus consectetur enim fuga! Repellendus modi ea explicabo aperiam, maiores fuga placeat atque dolorem quaerat.</li>
+                        <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</li>
+                        <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, commodi, nostrum.</li>
+                        <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus, veniam ullam ex rem, saepe quaerat eius, reprehenderit culpa recusandae quas dolor corporis!</li>
+                        <li><i class="fa fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, necessitatibus consequuntur iusto praesentium quis?</li>
+                    </ul>
                 </div>
             </div>
         </section>
-             
-            
         <section class="content grey">
             <div class="container">
                 <div class="content_description">
                     <h2>формат работы</h2>
-                    <h3>услуги и цены</h3>
-                </div>
+                    <h3>услуги и цены</h3> </div>
                 <div class="price">
-                    
                     <div class="price_item">
                         <h3>Одна встреча в цикле работы
                             очно или онлайн</h3>
@@ -130,9 +128,7 @@
                             <li>Цикл встреч начинается с первой ознакомительной встречи. На ней мы выбираем время встреч и тематику работы</li>
                             <li>Время - от 60 до 90 минут</li>
                             <li>Тема - на встречах мы работаем с вашим личным запросом или с запросом в паре.</li>
-                        </ul>
-                        <a href="#">Подробнее</a>
-                    </div>
+                        </ul> <a href="#">Подробнее</a> </div>
                     <div class="price_item">
                         <h3>Разовая консультация
                             очно или онлайн</h3>
@@ -140,85 +136,163 @@
                         <ul>
                             <li>Если вы заинтересованы в разовой консультации, мы можем поработать в этом формате.</li>
                             <li>Время - 120 минут</li>
-                            <li>Тема - на ваш выбор. Я помогу взглянуть на ситуацию со стороны и увидеть варианты развития. Это дает ощущение свободы и меняет ваше состояние.
-.</li>
-                        </ul>
-                        <a href="#">Подробнее</a>
-                    </div>
+                            <li>Тема - на ваш выбор. Я помогу взглянуть на ситуацию со стороны и увидеть варианты развития. Это дает ощущение свободы и меняет ваше состояние. .</li>
+                        </ul> <a href="#">Подробнее</a> </div>
                     <div class="price_item">
                         <h3>Пакет 5 консультаций</h3>
                         <h4>8 000 р.</h4>
                         <ul>
                             <li>Если мы нашли проблему, которую невозможно решить за одну сессию</li>
                             <li>Время - 120 минут</li>
-                            <li>Тема - на ваш выбор. Я помогу взглянуть на ситуацию со стороны и увидеть варианты развития. Это дает ощущение свободы и меняет ваше состояние.
-                        </ul>
-                        <a href="#">Подробнее</a>
-                    </div>
+                            <li>Тема - на ваш выбор. Я помогу взглянуть на ситуацию со стороны и увидеть варианты развития. Это дает ощущение свободы и меняет ваше состояние. </ul> <a href="#">Подробнее</a> </div>
                     <div class="price_item">
                         <h3>Пакет 10 консультаций</h3>
                         <h4>15 000 р.</h4>
                         <ul>
                             <li>Длительный курс для комплексной проработки личности</li>
                             <li>Время - 120 минут</li>
-                            <li>Тема - на ваш выбор. Я помогу взглянуть на ситуацию со стороны и увидеть варианты развития. Это дает ощущение свободы и меняет ваше состояние.
-                        </ul>
-                        <a href="#">Подробнее</a>
-                    </div>
-                    
+                            <li>Тема - на ваш выбор. Я помогу взглянуть на ситуацию со стороны и увидеть варианты развития. Это дает ощущение свободы и меняет ваше состояние. </ul> <a href="#">Подробнее</a> </div>
                 </div>
             </div>
         </section>
-             
-             
         <section class="content dark">
             <div class="container">
                 <div class="content_description">
                     <h2>записаться</h2>
-                    <h3>запись на консультацию</h3>
-                </div>
+                    <h3>запись на консультацию</h3> </div>
                 <div class="forms">
-                <form method="post">
-                <input type="text" name="name" placeholder="Ваше имя"  required>
-                 <input type="tel" name="phone" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="Ваш номер телефона" required>
-                 <input type="email" name="email" placeholder="Ваш e-mail" required>
-                 <input type="text" name="question" placeholder="Ваш вопрос"  required>
-                 <button type="submit">Записаться</button>
-           </form>
-           </div>
+                    <form method="post">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input  type="tel" name="phone" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="Ваш номер телефона" required>
+                        <input type="email" name="email" placeholder="Ваш e-mail" required>
+                        <input type="text" name="question" placeholder="Ваш вопрос" required>
+                        <button type="submit">Записаться</button>
+                    </form>
+                </div>
             </div>
         </section>
-             
-             
         <section class="content grey">
             <div class="container">
                 <div class="content_description">
                     <h2>блог</h2>
-                    <h3>мои публикации</h3>
-                </div>
+                    <h3>мои публикации</h3> </div>
                 <div class="blog_posts">
                     <div class="single_post">
-                       <h3>Как полюбить себя?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus placeat officiis inventore quos, ut delectus praesentium error maiores itaque vel.</p>
-                        <a href="#">Читать далее</a>
-                    </div>
+                        <h3>Как полюбить себя?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus placeat officiis inventore quos, ut delectus praesentium error maiores itaque vel.</p> <a href="#">Читать далее</a> </div>
                     <div class="single_post white_text">
-                       <h3>Как выйти из токсичных отношений?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magni ex praesentium incidunt illum, facilis mollitia dolor. Quis voluptatem id cum quod adipisci a error, enim odit cumque.</p>
-                        <a href="#">Читать далее</a>
-                    </div>
+                        <h3>Как выйти из токсичных отношений?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est magni ex praesentium incidunt illum, facilis mollitia dolor. Quis voluptatem id cum quod adipisci a error, enim odit cumque.</p> <a href="#">Читать далее</a> </div>
                     <div class="single_post">
-                       <h3>Как какать?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dolorum cum, ducimus magni ipsa nihil nemo qui minima ipsum explicabo amet iure.</p>
-                        <a href="#">Читать далее</a>
-                    </div>
+                        <h3>Как какать?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dolorum cum, ducimus magni ipsa nihil nemo qui minima ipsum explicabo amet iure.</p> <a href="#">Читать далее</a> </div>
                 </div>
             </div>
         </section>
-             
+        <section class="content blue">
+            <div class="container">
+                <div class="content_description">
+                    <h2>отзывы</h2>
+                    <h3>о моей работе</h3> </div>
+                <div class="carousel">
+                    <button class="carousel_button next" onclick="onNext();">&#187;</button>
+                    <button class="carousel_button prev" onclick="onPrev();">&#171;</button>
+                    <ul class="slides">
+                        <li class="slide" data-active> <img src="img/reveiw3.jpg" alt="">
+                            <div class="rew_content">
+                                <h4 class="name">Дарья Драконовна</h4>
+                                <p>Таня помогла мне принять и проработать свою теневую сторону. Научившись управлять ею, моё сердце запылало огнём!</p>
+                            </div>
+                        </li>
+                        <li class="slide"> <img src="img/reveiw1.jpg" alt="">
+                            <div class="rew_content">
+                                <h4 class="name">Всратислав Алексеев</h4>
+                                <p>Спасибо Тане! Она помогла мне найти в жизни повод для улыбки.</p>
+                            </div>
+                        </li>
+                        <li class="slide"> <img src="img/reveiw2.jpg" alt="">
+                            <div class="rew_content">
+                                <h4 class="name">Токсинья Кринжова (Такси)</h4>
+                                <p>Благодаря Тане я смогла выйти из токсичных отношений. Теперь я ветер среди поля(экологичная).</p>
+                            </div>
+                        </li>
+                        <li class="slide"> <img src="img/reveiw4.jpg" alt="">
+                            <div class="rew_content">
+                                <h4 class="name">Мужчина или бобёр</h4>
+                                <p>Я лечился от навязчивых сравнений себя с животными. Теперь доволен как слон. До лечения я был злой и нервный как собака, а теперь спокоен как удав.</p>
+                            </div>
+                        </li>
+                        <li class="slide"> <img src="img/reveiw5.jpg" alt="">
+                            <div class="rew_content">
+                                <h4 class="name">Света Котикова</h4>
+                                <p>Таня вылечила психосоматическую аллергию на котов</p>
+                            </div>
+                        </li>
+                        <li class="slide"> <img src="img/reveiw6.webp" alt="">
+                            <div class="rew_content">
+                                <h4 class="name">Олег</h4>
+                                <p>Благодаря Тане научился какать. Теперь я могу экономить на стирке!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="content dark">
+            <div class="container">
+                <div class="content_description">
+                    <h2>контакты</h2>
+                    <h3>мои социальные сети</h3> </div>
+                <div class="social"> <a href="#"><i class="fa fa-solid fa-paper-plane"></i></a> <a href="#"><i class="fa fa-brands fa-instagram"></i></a> <a href="#"><i class="fa fa-brands fa-vk"></i></a> <a href="#"><i class="fa fa-solid fa-envelope"></i></a> </div>
+            </div>
+        </section>
+        <section class="content grey">
+            <div class="container">
+                <div class="content_description">
+                    <h2>остались вопросы</h2>
+                    <h3>задайте их здесь</h3> </div>
+                <div class="forms">
+                    <form method="post">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input  type="tel" name="phone" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="Ваш номер телефона" required>
+                        <input type="email" name="email" placeholder="Ваш e-mail" required>
+                        <input type="text" name="question" placeholder="Ваш вопрос" required>
+                        <button type="submit">Oтправить</button>
+                        <p>нажимая «отправить», вы соглашаетесь с нашей политикой конфиденциальности</p>
+                    </form>
+                </div>
+            </div>
+        </section>
         
-              
-  </div> <!-- end wrapper -->
-    
+        
+        <footer>
+                <div class="container">
+                    <div class="footer__menu">
+                        <ul class="footer__menu_list">
+                            <li class="footer__menu_item"><a href="#" class="footer__link">главная</a></li>
+                            <li class="footer__menu_item"><a href="#" class="footer__link">обо&nbsp;мне</a></li>
+                            <li class="footer__menu_item"><a href="#" class="footer__link">услуги&nbsp;и&nbsp;цены</a></li>
+                            <li class="footer__menu_item"><a href="#" class="footer__link">блог</a></li>
+                            <li class="footer__menu_item"><a href="#" class="footer__link">faq</a></li>
+                            <li class="footer__menu_item"><a href="#" class="footer__link">отзывы</a></li>
+                            <li class="footer__menu_item"><a href="#" class="footer__link">договор</a></li>
+                            <li class="footer__menu_item"><a href="#" class="footer__link">контакты</a></li>
+                        </ul>
+                        <div class="footer_content">
+                           <div class="legal">
+                            <p class="numbers">ИП Татьяна Соколова</p>
+                            <p class="numbers">ИНН 56473583474</p>
+                            </div>
+                            <div class="with_love">
+                            <p class="copyright">разработано с любовью в <a href="#">Wave</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+        </footer>
+        
+    </div>
+    <!-- end wrapper -->
 </body>
+
 </html>
