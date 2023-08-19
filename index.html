@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="scripts/burger.js"></script>
+    <script src="scripts/burger.js" defer></script>
     <script src="scripts/slider.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
     <script src="scripts/scroll_top.js" defer></script>
     <meta name="viewport" content="width=device-width"> </head>
 
@@ -31,13 +32,13 @@
                     <nav class="header__menu">
                         <ul class="header__menu_list">
                             <li class="header__menu_item"><a href="#" class="header__link current">главная</a></li>
-                            <li class="header__menu_item"><a href="/html/about.html"   class="header__link">обо&nbsp;мне</a></li>
-                            <li class="header__menu_item"><a href="/html/price.html"   class="header__link">услуги&nbsp;и&nbsp;цены</a></li>
-                            <li class="header__menu_item"><a href="/html/blog.html"   class="header__link">блог</a></li>
-                            <li class="header__menu_item"><a href="/html/faq.html"   class="header__link">faq</a></li>
-                            <li class="header__menu_item"><a href="/html/review.html"   class="header__link">отзывы</a></li>
-                            <li class="header__menu_item"><a href="/html/dogovor.html"   class="header__link">договор</a></li>
-                            <li class="header__menu_item"><a href="/html/contacts.html" class="header__link">контакты</a></li>
+                            <li class="header__menu_item"><a href="html/about.html"   class="header__link">обо&nbsp;мне</a></li>
+                            <li class="header__menu_item"><a href="html/price.html"   class="header__link">услуги&nbsp;и&nbsp;цены</a></li>
+                            <li class="header__menu_item"><a href="html/blog.html"   class="header__link">блог</a></li>
+                            <li class="header__menu_item"><a href="html/faq.html"   class="header__link">faq</a></li>
+                            <li class="header__menu_item"><a href="html/review.html"   class="header__link">отзывы</a></li>
+                            <li class="header__menu_item"><a href="html/dogovor.html"   class="header__link">договор</a></li>
+                            <li class="header__menu_item"><a href="html/contacts.html" class="header__link">контакты</a></li>
                             <li class="header__menu_item"><a href="html/contacts.html"  class="header__link">записаться</a></li>
                         </ul>
                     </nav>
@@ -257,6 +258,38 @@
                 </div>
             </div>
         </section>
+        
+        
+        
+        <div class="special">
+
+            <div class="container">
+
+                <div class="modal_content">
+                   <div class="modal_close">
+                       <button>X</button>
+                   </div>
+                    <div class="forms">
+
+                    <form method="post">
+                       
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="Ваш номер телефона" required>
+                        <input type="email" name="email" placeholder="Ваш e-mail" required>
+                        <input type="text" name="question" placeholder="Ваш вопрос" required>
+                        <button type="submit">Oтправить</button>
+                        <p>нажимая «отправить», вы соглашаетесь с нашей политикой конфиденциальности</p>
+                    </form>
+                </div>
+                </div>
+                <div class="modal_window">
+            </div>
+
+            </div>
+        </div>
+        
+        
+        
         <footer>
             <div class="container">
                 <div class="footer__menu">
